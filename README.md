@@ -18,6 +18,7 @@
 3. [Domain](#domain)
 4. [Technologies](#technologies)
 5. [Installation](#installation)
+6. [Report Bugs](#report-bugs)
 
 ### Introduction:
 
@@ -25,11 +26,11 @@ This is a simple music streaming applicaiton with the basic design and layout to
 
 ### Platform:
 
-The application will be designed as a website or web applicaiton since it will enable us to use all the content we learned in the course. Also because a website can be accessed from any device as long as it has a browser installed.
+The application will be designed as a website or web applicaiton. Because this can enable us to use all the content we learn in the course to use. And also because a website can be accessed from any device as long as it has a browser installed.
 
 ### Domain:
 
-The domain of this project is audio/music streaming. The users will have access to the music through their devices and the creators can add new music to the bucket in the cloud so that the users can surf.
+The domain of this project is audio/music streaming. The users will have access to the music through their devices and the creators can add new music to the bucket in the cloud for the users to stream.
 
 ### Technologies:
 
@@ -44,10 +45,16 @@ We will be using the following technologies in the front-end and the backend:
 The front-end will be coded in HTML, CSS, and JavaScript and the backend will be programmed in
 NodeJS, while the data and audio files will be served on Amazon cloud services.
 
-This is a basic set up we might move on to using frameworks, libraries, and build tools like `JQuery`, `Bootstrap`, and `Gulp` to ease up the designing and staging process so that we have a better and enhanced view of the User Interface and keep an update of the build process so that it does not ship out with bugs with every commit. This will be solely done to help me as the student have a better workflow.
+This is a basic setup, later on we might move on to using frameworks, libraries, and build tools like `JQuery`, `Bootstrap`, and `Gulp` to ease up the designing and staging process as the project becomes more functional and complicated, but for now we will be using Javascript, HTML, and CSS as the core of the project.
+
+This can also help us with the a better and enhanced view of the User Interface and keep an update of the build process so that it does not ship out with bugs with every commit. This will be solely done to help me as the student have a better workflow.
 
 ### Installation:
 
 To build the project clone the repository by runing the following commands:
 
 `git clone "repository url"`
+
+### Report Bugs:
+
+To report bugs submit an issue on our GitHub repository.
