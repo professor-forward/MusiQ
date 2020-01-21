@@ -1,4 +1,4 @@
-###<center>CSI 3140 Project</center>
+<h2><center>CSI 3140 Project</center></h2>
 
 <center><img src="/src/assets/logo.svg?sanitize=true" height="100" width="100">
 </img>
