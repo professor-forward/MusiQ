@@ -1,0 +1,11 @@
+ul li {
+  margin-right: 10px;
+  list-style: none;
+  display: inline-block;
+
+  color: #ffffff;
+}
+
+nav {
+  background: #444444;
+}
