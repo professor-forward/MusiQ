@@ -14,9 +14,14 @@
 ## Table of contents
 
 1. [Introduction](#introduction)
+2. [Colour Palette](#color-palette)
 
 <!-- 2. [Report Bugs](#report-bugs) -->
 
 ### Introduction:
 
 This is a basic HTML and CSS layout of the music streaming website that we will be building.
+
+### Colour Palette
+
+The main color pallete for our music streaming website will be as follow.
