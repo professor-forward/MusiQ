@@ -1,13 +1,13 @@
 <h2><center>CSI 3140 Project</center></h2>
 
-<center><img src="/src/assets/logo.svg?sanitize=true" height="100" width="100">
+<center><img src="/app/assets/logo.svg?sanitize=true" height="100" width="100">
 </img>
 </center>
 
 > Ferozuddin Alizada
 > 8922142
 >
-> **Description:** This is a simple audio >streaming web application that will be used to >stream music.
+> **Description:** This is a simple audio streaming web application that will be used to stream music.
 
 ---
 
@@ -19,6 +19,7 @@
 4. [Technologies](#technologies)
 5. [Installation](#installation)
 6. [Report Bugs](#report-bugs)
+7. [Deliverables](#deliverables)
 
 ### Introduction:
 
@@ -58,3 +59,7 @@ To build the project clone the repository by runing the following commands:
 ### Report Bugs:
 
 To report bugs submit an issue on our GitHub repository.
+
+### Deliverables and links
+
+1. [Deliverable 2](./app/deliverables/README.md)
