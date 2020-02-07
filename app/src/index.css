@@ -327,3 +327,10 @@ form input {
 .search-bar hr {
   margin-top: 1.7em;
 }
+
+.danger {
+  background-color: #d9534f;
+}
+.danger:hover {
+  background-color: #ca4e4a;
+}
