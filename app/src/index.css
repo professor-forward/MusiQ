@@ -39,7 +39,8 @@ ul {
   width: 100%;
 }
 
-li a {
+li a,
+li input {
   display: inline-block;
   color: white;
   text-align: center;
@@ -83,11 +84,16 @@ li:active {
   background: #ffffff;
 }
 .sidebar-nav {
+  padding-top: 0.8em;
   background: #211626;
   width: 25%;
   height: 100%;
   text-align: center;
 }
+input:focus {
+  outline-width: 0;
+}
+
 .sidebar-nav ul li {
   display: block;
   text-align: left;
@@ -271,7 +277,7 @@ form * {
   box-sizing: border-box;
 }
 
-input {
+form input {
   width: 100%;
   margin: 5px 0 22px 0;
   display: inline-block;
@@ -304,4 +310,15 @@ input {
   color: blue;
   font-size: 0.8em;
   padding: 15px;
+}
+
+.search-box {
+  width: 76%;
+  margin-left: 1.4em;
+  height: 3em;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #081317;
 }

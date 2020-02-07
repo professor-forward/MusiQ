@@ -38,7 +38,16 @@
     </nav>
     <main class="main">
       <div class="sidebar-nav">
+        <div class="search-bar">
+          <i class="fas fa-search"></i
+          ><input
+            type="text"
+            placeholder="Search..."
+            class="no-hover search-box"
+          />
+        </div>
         <ul class="navbar-item">
+          <hr />
           <li><i class="fas fa-heart"></i><a href="#">Favourites</a></li>
           <li><i class="fas fa-list"></i><a href="#">Categories</a></li>
           <li><i class="fas fa-music"></i><a href="#">Playlist</a></li>
@@ -199,15 +208,10 @@
               placeholder="Confirm Password"
               name="re-password"
             />
-            <div class="date">
-              <label for="re-password"><b>Date of Birth</b></label>
-              <input
-                required
-                type="date"
-                placeholder="Year"
-                name="re-password"
-              />
-            </div>
+
+            <label for="re-password"><b>Date of Birth</b></label>
+            <input required type="date" placeholder="Year" name="re-password" />
+            <hr />
             <div class="login-form-btn">
               <button type="submit" class="loginbtn">Register</button>
               <button id="closebtnreg" class="loginbtn">Close</button>
