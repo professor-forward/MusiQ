@@ -236,6 +236,7 @@ img {
   display: none;
   padding-top: 100px;
   position: fixed;
+
   left: 0;
   top: 0;
   width: 100%;
@@ -247,17 +248,17 @@ img {
 .modal-content {
   margin: auto;
   background-color: #fff;
-
   padding: 0;
   outline: 0;
-  width: 600px;
+  width: 500px;
+  border-radius: 5px;
 }
 
 .close {
   cursor: pointer;
 }
 .container {
-  padding: 10px 10px 10px 10px;
+  padding: 20px;
 }
 
 label {

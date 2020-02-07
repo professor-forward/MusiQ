@@ -164,7 +164,7 @@
             />
 
             <button type="submit" class="loginbtn">Login</button>
-            <button type="reset" class="loginbtn">Close</button>
+            <button id="closebtn" class="loginbtn">Close</button>
           </div>
         </form>
       </div>
@@ -175,6 +175,8 @@
     var audio = document.getElementById("audio-test");
     var card = document.getElementsByClassName("player-card");
     var play = document.getElementById("play");
+    var closebtn = document.getElementById("closebtn");
+    var modal = document.getElementById("modal-login");
 
     play.addEventListener("click", function() {
       if (!audio.paused) {
@@ -182,6 +184,9 @@
       } else {
         audio.play();
       }
+    });
+    closebtn.addEventListener("click", () => {
+      modal.style.display = "none";
     });
     Array.from(card).forEach(element => {
       element.addEventListener("click", () => {
