@@ -276,7 +276,9 @@ input {
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
+  background-color: #e6eee8;
   padding: 1.2em;
+  border-radius: 20px;
 }
 
 .loginbtn {
@@ -295,4 +297,11 @@ input {
 .login-form-btn {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.forgot-pass {
+  color: blue;
+  font-size: 0.8em;
+  padding: 15px;
 }
