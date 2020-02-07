@@ -7,7 +7,7 @@
 > Ferozuddin Alizada
 > 8922142
 >
-> **Deliverable 2:** This is a Mock Up and is barely functional since the majority of the web applicaiton relies on the backend and data retrival. Most of the links and the functionalities are reliant on the data it receives from the backend hence most of the buttons will not load a new page. Also because this will be a single page applicaiton there is only one page that has all the content.
+> **Deliverable 2:** This is a Mock Up and is barely functional since the majority of the web applicaiton relies on the backend and data retrival. Most of the links and the functionalities are reliant on the data it receives from the backend hence most of the buttons will not load a new page. Also because this will be a single page applicaiton there is only one page that has all the content. The source code for the HTML and CSS can be found in the `app/src/` folder.
 
 ---
 
@@ -80,3 +80,9 @@ I have used the basic built in pop-up from the broswer to notify when a person c
 
 ![image](/app/assets/snap-3.png)
 ![image](/app/assets/snap-4.png)
+
+
+### Installation
+
+Simply copy the repo in your desktop and open the HTML file from `app/src/index.html`. This will run the web application. A proper build tool will be deployed with the next deliverable.
+
