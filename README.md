@@ -62,4 +62,4 @@ To report bugs submit an issue on our GitHub repository.
 
 ### Deliverables and links
 
-1. [Deliverable 2](./app/deliverables/README.md)
+1. [Deliverable 2](/app/deliverables/README.md)

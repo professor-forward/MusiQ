@@ -16,6 +16,9 @@
 1. [Introduction](#introduction)
 2. [Colour Palette](#colour-palette)
 3. [Fonts and Type Scale](#fonts-and-type-scale)
+4. [Icons](#icons)
+5. [Buttons and Form Elements](#buttons-and-form-elements)
+6. [UI Components](#ui-components)
 
 <!-- 2. [Report Bugs](#report-bugs) -->
 
@@ -43,14 +46,18 @@ For most of the project I used Google's Roboto as my default family font and inc
 
 For the icons I used the free icon templates that is available online on
 [Fonts Awesome](https://fontawesome.com/icons?d=gallery). The Icons are available on the web app I designed [Icons](/app/src/index.html).
+
 ![image](/app/assets/snap-5.png)
+
 ![image](/app/assets/snap-6.png)
 
 ### Buttons and Form Elements
 
 I have used the most basic structure available in HTML as buttons to simply the user experience. Instead of making complicated button designs I used `li` elements as buttons. As seen on the navbar and the sidebar in the web app. Also available in app/src/index.html file.
 There are may form elements used in this applications since it will cause the project to become to complicated.
+
 ![image](/app/assets/snap-3.png)
+
 ![image](/app/assets/snap-4.png)
 
 ### UI Components
