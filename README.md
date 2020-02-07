@@ -56,10 +56,14 @@ To build the project clone the repository by runing the following commands:
 
 `git clone "repository url"`
 
+And simply copy the repo in your desktop and open the HTML file from `app/src/index.html`. This will run the web application. A proper automated build tool will be deployed with the next deliverable.
+
 ### Report Bugs:
 
 To report bugs submit an issue on our GitHub repository.
 
 ### Deliverable 2
+
+The link to the deliverable are:
 
 1. [Deliverable 2](/app/deliverables/README.md)
