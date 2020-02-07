@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="index.css" />
 
-    <title>Melody</title>
+    <title>MusiQ</title>
   </head>
   <body>
     <nav class="navbar">
@@ -28,16 +28,25 @@
         <li><a href="#">Library</a></li>
         <li><a href="#">Browse</a></li>
         <!-- <li class="navbar-item-right"><a href="#">Search</a></li> -->
-        <li
-          class="navbar-item-right w3-button w3-black"
-          onclick="document.getElementById('modal-login').style.display='block'"
-        >
+        <li id="loginbtn" class="navbar-item-right">
           <a href="#">Login</a>
+        </li>
+        <li id="registerbtn" class="navbar-item-right register">
+          <a href="#">Register</a>
         </li>
       </ul>
     </nav>
     <main class="main">
       <div class="sidebar-nav">
+        <div class="search-bar">
+          <i class="fas fa-search"></i
+          ><input
+            type="text"
+            placeholder="Search..."
+            class="no-hover search-box"
+          />
+          <hr />
+        </div>
         <ul class="navbar-item">
           <li><i class="fas fa-heart"></i><a href="#">Favourites</a></li>
           <li><i class="fas fa-list"></i><a href="#">Categories</a></li>
@@ -59,8 +68,8 @@
               height="150"
               width="200"
             />
-            <p class="artist-name">All Time Low</p>
-            <p class="artist-track">Erik Conta</p>
+            <p class="artist-track">All Time Low</p>
+            <p class="artist-name">Erik Conta</p>
           </div>
           <div class="player-card">
             <img
@@ -70,7 +79,7 @@
               width="200"
             />
             <p class="artist-name">Clocks</p>
-            <p class="artist-track">Wanye Kest</p>
+            <p class="artist-name">Wanye Kest</p>
           </div>
           <div class="player-card">
             <img
@@ -79,8 +88,8 @@
               height="150"
               width="200"
             />
-            <p class="artist-name">Rain in Winter</p>
-            <p class="artist-track">Lil Burgundy</p>
+            <p class="artist-track">Rain in Winter</p>
+            <p class="artist-name">Lil Burgundy</p>
           </div>
           <div class="player-card">
             <img
@@ -89,8 +98,8 @@
               height="150"
               width="200"
             />
-            <p class="artist-name">Christmas is Amazing</p>
-            <p class="artist-track">Tiny Wayne</p>
+            <p class="artist-track">Christmas is Amazing</p>
+            <p class="artist-name">Tiny Wayne</p>
           </div>
           <div class="player-card">
             <img
@@ -99,8 +108,8 @@
               height="150"
               width="200"
             />
-            <p class="artist-name">Christmas is coming!</p>
-            <p class="artist-track">Big Boy</p>
+            <p class="artist-track">Christmas is coming!</p>
+            <p class="artist-name">Big Boy</p>
           </div>
           <div class="player-card">
             <img
@@ -110,7 +119,7 @@
               width="200"
             />
             <p class="artist-name">Life is a river</p>
-            <p class="artist-track">Albama man</p>
+            <p class="artist-name">Albama man</p>
           </div>
         </div>
       </div>
@@ -118,8 +127,8 @@
     <div class="audio-player">
       <div class="player">
         <div id="info" class="info">
-          <span class="artist">Wanye Kest</span>
-          <span class="name">Clocks...</span>
+          <span id="artist" class="artist">Wanye Kest</span>
+          <span id="title" class="name">Clocks...</span>
           <div class="progress-bar">
             <div class="bar"></div>
           </div>
@@ -159,31 +168,60 @@
               placeholder="Password"
               name="password"
             />
+            <hr />
+            <div class="login-form-btn">
+              <button type="submit" class="loginbtn">Login</button>
+              <button id="closebtnlogin" class="loginbtn danger">Close</button>
+              <a href="#" class="forgot-pass">Forgot Password?</a>
+            </div>
+            <!-- <hr /> -->
+          </div>
+        </form>
+      </div>
+    </div>
 
-            <button type="submit" class="loginbtn">Login</button>
-            <button type="reset" class="loginbtn">Close</button>
+    <div id="modal-register" class="modal">
+      <div class="modal-content">
+        <form action="#">
+          <div class="container">
+            <h1>Register</h1>
+            <hr />
+            <label for="email">Email</label>
+            <input
+              required
+              type="text"
+              placeholder="Email Address"
+              name="email"
+            />
+
+            <label for="password"><b>Password</b></label>
+            <input
+              required
+              type="password"
+              placeholder="Password"
+              name="password"
+            />
+            <label for="re-password"><b>Confirm Password</b></label>
+            <input
+              required
+              type="password"
+              placeholder="Confirm Password"
+              name="re-password"
+            />
+
+            <label for="re-password"><b>Date of Birth</b></label>
+            <input required type="date" placeholder="Year" name="re-password" />
+            <hr />
+            <div class="login-form-btn">
+              <button type="submit" class="loginbtn">Register</button>
+              <button id="closebtnreg" class="loginbtn danger">Close</button>
+              <a href="#" class="forgot-pass">Already Have an Account?</a>
+            </div>
           </div>
         </form>
       </div>
     </div>
   </body>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <script>
-    var audio = document.getElementById("audio-test");
-    var card = document.getElementsByClassName("player-card");
-    var play = document.getElementById("play");
-
-    play.addEventListener("click", function() {
-      if (!audio.paused) {
-        audio.pause();
-      } else {
-        audio.play();
-      }
-    });
-    Array.from(card).forEach(element => {
-      element.addEventListener("click", () => {
-        alert("Now Playing " + element.lastElementChild.innerHTML);
-      });
-    });
-  </script>
+  <script src="index.js"></script>
 </html>

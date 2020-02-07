@@ -39,7 +39,8 @@ ul {
   width: 100%;
 }
 
-li a {
+li a,
+li input {
   display: inline-block;
   color: white;
   text-align: center;
@@ -63,6 +64,9 @@ li:active {
 .navbar-item-right {
   float: right;
 }
+.register a:hover {
+  color: #4caf50;
+}
 
 .main {
   display: flex;
@@ -80,11 +84,16 @@ li:active {
   background: #ffffff;
 }
 .sidebar-nav {
+  padding-top: 0.8em;
   background: #211626;
   width: 25%;
   height: 100%;
   text-align: center;
 }
+input:focus {
+  outline-width: 0;
+}
+
 .sidebar-nav ul li {
   display: block;
   text-align: left;
@@ -244,17 +253,20 @@ img {
 .modal-content {
   margin: auto;
   background-color: #fff;
-
   padding: 0;
   outline: 0;
-  width: 600px;
+  width: 400px;
+  border-radius: 10px;
 }
 
+.container h1 {
+  text-align: center;
+}
 .close {
   cursor: pointer;
 }
 .container {
-  padding: 10px 10px 10px 10px;
+  padding: 20px;
 }
 
 label {
@@ -265,20 +277,60 @@ form * {
   box-sizing: border-box;
 }
 
-input {
+form input {
   width: 100%;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
+  background-color: #e6eee8;
   padding: 1.2em;
+  border-radius: 20px;
 }
 
 .loginbtn {
   font-size: 1em;
   padding: 10px;
-  margin: 8px 0;
-  border: none;
+  margin: 0.8em;
+  border-radius: 30px;
   background-color: #4caf50;
-  width: 100%;
-  border-radius: 3px;
+  width: 40%;
+  display: inline;
+}
+
+.loginbtn:hover {
+  background-color: #81c383;
+}
+.login-form-btn {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.forgot-pass {
+  color: blue;
+  font-size: 0.8em;
+  padding: 15px;
+}
+
+.search-box {
+  width: 76%;
+  margin-left: 1.4em;
+  height: 3em;
+  font-size: 0.8em;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #081317;
+}
+
+.search-bar hr {
+  margin-top: 1.7em;
+}
+
+.danger {
+  background-color: #d9534f;
+}
+.danger:hover {
+  background-color: #ca4e4a;
 }
