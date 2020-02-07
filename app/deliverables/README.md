@@ -81,6 +81,8 @@ I have used the basic built in pop-up from the broswer to notify when a person c
 ![image](/app/assets/snap-3.png)
 ![image](/app/assets/snap-4.png)
 
+
 ### Installation
 
 Simply copy the repo in your desktop and open the HTML file from `app/src/index.html`. This will run the web application. A proper build tool will be deployed with the next deliverable.
+
