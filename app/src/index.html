@@ -19,7 +19,8 @@
             alt="logo"
             width="46px"
             height="46px"
-          /><a class="active" href="#">MusiQ</a>
+          />
+          <a class="active" href="#">MusiQ</a>
         </li>
         <li><a href="#">Favourites</a></li>
         <li><a href="#">Library</a></li>
@@ -34,9 +35,71 @@
             <li><i class="fas fa-heart"></i><a href="#">Favourites</a></li>
             <li><i class="fas fa-list"></i><a href="#">Categories</a></li>
             <li><i class="fas fa-music"></i><a href="#">Playlist</a></li>
+        </ul>
       </div>
-      <div class="jumbotron"></div>
+      <div class="jumbotron">
+          <div class="player-screen">
+              <div class="player-title">
+                  <h1>
+                      Favourites
+                  </h1>
+                  <hr>
+              </div>
+              <div class="player-card">
+
+                  <img src="/app/assets/album-1.jpeg" alt="album image" height="150px" width="200px">
+                  <p class="artist-name">All Time Low</p c>
+                  <p class="artist-track">Erik Conta</p>
+              </div>
+              <div class="player-card">
+                <img src="/app/assets/album-2.jpeg" alt="album image" height="150px" width="200px">
+                <p class="artist-name">Clocks</p c>
+                <p class="artist-track">Wanye Kest</p>
+            </div>
+            <div class="player-card">
+                <img src="/app/assets/album-3.jpeg" alt="album image" height="150px" width="200px">
+                <p class="artist-name">Rain in Winter</p c>
+                <p class="artist-track">Lil Burgundy</p>
+            </div>
+            <div class="player-card">
+                <img src="/app/assets/album-4.jpeg" alt="album image" height="150px" width="200px">
+                <p class="artist-name">Christmas is Amazing</p c>
+                <p class="artist-track">Tiny Wayne</p>
+            </div>
+            <div class="player-card">
+                <img src="/app/assets/album-5.jpeg" alt="album image" height="150px" width="200px">
+                <p class="artist-name">Christmas is coming!</p c>
+                <p class="artist-track">Big Boy</p>
+            </div>
+            <div class="player-card">
+                <img src="/app/assets/album-6.jpeg" alt="album image" height="150px" width="200px">
+                <p class="artist-name">Life is a river</p c>
+                <p class="artist-track">Albama man</p>
+            </div>
+            
+            </div>
+          </div>
+      </div>
     </main>
+    <div class="audio-player">
+      <div class="player">
+        <div id="info" class="info">
+            <span class="artist">Wanye Kest</span>
+            <span class="name">Clocks...</span>
+            <div class="progress-bar">
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div id="control-panel" class="control-panel">
+            <div class="album-art"></div>
+            <div class="controls">
+                <div class="prev fas fa-backward"></div>
+                <div id="play" class="play fas fa-play"></i></div>
+                <div class="next fas fa-forward"></div>
+            </div>
+        </div>
+    </div>
+    </div>
   </body>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </html>
