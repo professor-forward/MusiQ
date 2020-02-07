@@ -316,9 +316,14 @@ form input {
   width: 76%;
   margin-left: 1.4em;
   height: 3em;
+  font-size: 0.8em;
   border: none;
   color: #ffffff;
   text-align: center;
   border-radius: 20px;
   background-color: #081317;
+}
+
+.search-bar hr {
+  margin-top: 1.7em;
 }

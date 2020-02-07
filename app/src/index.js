@@ -35,7 +35,17 @@ window.onload = () => {
 
   Array.from(card).forEach(element => {
     element.addEventListener("click", () => {
-      alert("Now Playing " + element.lastElementChild.innerHTML);
+      alert("Now Playing " + document.getElementById("artist").innerText);
+      alert("Now Playing " + element.firstElementChild.getAttribute("src"));
+      document.getElementById("artist").innerText =
+        element.lastElementChild.innerHTML;
+      document.getElementById("title").innerText =
+        element.lastElementChild.previousElementSibling.innerHTML;
+
+      var image = document.getElementsByClassName("album-art");
+      image[0].style.backgroundImage = `url(" ${element.firstElementChild.getAttribute(
+        "src"
+      )}")`;
     });
   });
 };
