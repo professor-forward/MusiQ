@@ -31,6 +31,7 @@ This is a basic HTML and CSS layout of the music streaming website that we will 
 The main color pallete for our music streaming website will be as follow. You can find the Color pallete in the in the app/src/index.css file. It has been used quite a few times through out the file, so it will be difficult to include all the line numbers.
 
 - ![#081317](https://placehold.it/15/081317/000000?text=+) `#081317`
+- ![#4caf50](https://placehold.it/15/4caf50/000000?text=+) `#4caf50`
 - ![#3A3E3B](https://placehold.it/15/3A3E3B/000000?text=+) `#3A3E3B`
 - ![#484D6D](https://placehold.it/15/3A3E3B/484D6D?text=+) `#484D6D`
 - ![#001021](https://placehold.it/15/001021/484D6D?text=+) `#001021`
@@ -62,7 +63,12 @@ There are may form elements used in this applications since it will cause the pr
 
 ![image](/app/assets/snap-4.png)
 
+![image](/app/assets/snap-8.png)
+
 ### UI Components
 
 I have used the basic built in pop-up from the broswer to notify when a person clicks on the desired song to be played. It will alert that the song is being played. I might move to used a modal in the future since this is an HTML/CSS and not much JavaScript is involved I didn't design a modal as of yet. Although there are basic forms of play and next and previous buttons and a progress bar that will heavily rely on JavaScript to function.
+
 ![image](/app/assets/snap-1.png)
+
+![image](/app/assets/snap-8.png)
