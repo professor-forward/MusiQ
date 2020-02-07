@@ -63,6 +63,9 @@ li:active {
 .navbar-item-right {
   float: right;
 }
+.register a:hover {
+  color: #4caf50;
+}
 
 .main {
   display: flex;
