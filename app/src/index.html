@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="index.css" />
 
-    <title>Melody</title>
+    <title>MusiQ</title>
   </head>
   <body>
     <nav class="navbar">
@@ -28,13 +28,10 @@
         <li><a href="#">Library</a></li>
         <li><a href="#">Browse</a></li>
         <!-- <li class="navbar-item-right"><a href="#">Search</a></li> -->
-        <li
-          class="navbar-item-right"
-          onclick="document.getElementById('modal-login').style.display='block'"
-        >
+        <li id="loginbtn" class="navbar-item-right">
           <a href="#">Login</a>
         </li>
-        <li class="navbar-item-right register">
+        <li id="registerbtn" class="navbar-item-right register">
           <a href="#">Register</a>
         </li>
       </ul>
@@ -162,8 +159,38 @@
               placeholder="Password"
               name="password"
             />
+            <hr />
+            <div class="login-form-btn">
+              <button type="submit" class="loginbtn">Login</button>
+              <button id="closebtn" class="loginbtn">Close</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
 
-            <button type="submit" class="loginbtn">Login</button>
+    <div id="modal-register" class="modal">
+      <div class="modal-content">
+        <form action="#">
+          <div class="container">
+            <h1>Register</h1>
+            <hr />
+            <label for="email">Email</label>
+            <input
+              required
+              type="text"
+              placeholder="Email Address"
+              name="email"
+            />
+
+            <label for="password"><b>Password</b></label>
+            <input
+              required
+              type="password"
+              placeholder="Password"
+              name="password"
+            />
+            <button type="submit" class="loginbtn">Register</button>
             <button id="closebtn" class="loginbtn">Close</button>
           </div>
         </form>
@@ -177,6 +204,8 @@
     var play = document.getElementById("play");
     var closebtn = document.getElementById("closebtn");
     var modal = document.getElementById("modal-login");
+    var loginbtn = document.getElementById("loginbtn");
+    var registbtn = document.getElementById("registerbtn");
 
     play.addEventListener("click", function() {
       if (!audio.paused) {
@@ -188,6 +217,13 @@
     closebtn.addEventListener("click", () => {
       modal.style.display = "none";
     });
+    loginbtn.addEventListener("click", () => {
+      modal.style.display = "block";
+    });
+    registbtn.addEventListener("click", () => {
+      modal.style.display = "block";
+    });
+
     Array.from(card).forEach(element => {
       element.addEventListener("click", () => {
         alert("Now Playing " + element.lastElementChild.innerHTML);

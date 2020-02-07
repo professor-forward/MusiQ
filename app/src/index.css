@@ -236,7 +236,6 @@ img {
   display: none;
   padding-top: 100px;
   position: fixed;
-
   left: 0;
   top: 0;
   width: 100%;
@@ -250,10 +249,13 @@ img {
   background-color: #fff;
   padding: 0;
   outline: 0;
-  width: 500px;
-  border-radius: 5px;
+  width: 400px;
+  border-radius: 10px;
 }
 
+.container h1 {
+  text-align: center;
+}
 .close {
   cursor: pointer;
 }
@@ -280,9 +282,17 @@ input {
 .loginbtn {
   font-size: 1em;
   padding: 10px;
-  margin: 8px 0;
-  border: none;
+  margin: 0.8em;
+  border-radius: 30px;
   background-color: #4caf50;
-  width: 100%;
-  border-radius: 3px;
+  width: 40%;
+  display: inline;
+}
+
+.loginbtn:hover {
+  background-color: #81c383;
+}
+.login-form-btn {
+  display: flex;
+  justify-content: center;
 }
