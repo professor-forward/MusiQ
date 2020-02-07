@@ -19,7 +19,7 @@
 4. [Technologies](#technologies)
 5. [Installation](#installation)
 6. [Report Bugs](#report-bugs)
-7. [Deliverables](#deliverables)
+7. [Deliverable 2](#deliverable-2)
 
 ### Introduction:
 
@@ -60,6 +60,6 @@ To build the project clone the repository by runing the following commands:
 
 To report bugs submit an issue on our GitHub repository.
 
-### Deliverables and links
+### Deliverable 2
 
 1. [Deliverable 2](/app/deliverables/README.md)
