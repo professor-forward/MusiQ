@@ -25,3 +25,8 @@ This is a basic HTML and CSS layout of the music streaming website that we will 
 ### Colour Palette
 
 The main color pallete for our music streaming website will be as follow.
+#081317
+#3A3E3B
+#484D6D
+#001021
+#FFFFFF
