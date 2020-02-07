@@ -42,6 +42,8 @@ The main color pallete for our music streaming website will be as follow. You ca
 For most of the project I used Google's Roboto as my default family font and incase it is not availble from the Google CDN Sans-serif will be used. The font has been linked in the app/src/index.html file on line 8. And the css contains the declartion of the family font as the default on line 12.
 [Roboto](https://fonts.google.com/specimen/Roboto?selection.family=Roboto)
 
+As for Scaling I used relative scaling i.e em measurements and px since since of the cards and image sizes needs to be decalred on the HTML side to help in efficient loading.
+
 ### Icons
 
 For the icons I used the free icon templates that is available online on

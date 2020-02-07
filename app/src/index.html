@@ -28,9 +28,12 @@
         <li><a href="#">Library</a></li>
         <li><a href="#">Browse</a></li>
         <!-- <li class="navbar-item-right"><a href="#">Search</a></li> -->
-        <!-- <li class="navbar-item-right ">
+        <li
+          class="navbar-item-right w3-button w3-black"
+          onclick="document.getElementById('id01').style.display='block'"
+        >
           <a href="#">Login</a>
-        </li> -->
+        </li>
       </ul>
     </nav>
     <main class="main">
@@ -134,13 +137,33 @@
         </div>
       </div>
     </div>
-    <div id="id01" class="w3-modal">
-      <div class="w3-modal-content">
-        <div class="w3-container">
-          <span class="w3-button w3-display-topright">&times;</span>
-          <p>Some text in the Modal..</p>
-          <p>Some text in the Modal..</p>
-        </div>
+
+    <div id="id01" class="modal">
+      <div class="modal-content">
+        <form action="#">
+          <div class="container">
+            <h1>Login</h1>
+            <hr />
+            <label for="email">Email</label>
+            <input
+              required
+              type="text"
+              placeholder="Email Address"
+              name="email"
+            />
+
+            <label for="password"><b>Password</b></label>
+            <input
+              required
+              type="password"
+              placeholder="Password"
+              name="password"
+            />
+
+            <button type="submit" class="loginbtn">Login</button>
+            <button type="reset" class="loginbtn">Close</button>
+          </div>
+        </form>
       </div>
     </div>
   </body>
