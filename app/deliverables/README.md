@@ -7,7 +7,7 @@
 > Ferozuddin Alizada
 > 8922142
 >
-> **Deliverable 2:** This is a Mock Up and is barely functional since the majority of the web applicaiton relies on the backend and data retrival.
+> **Deliverable 2:** This is a Mock Up and is barely functional since the majority of the web applicaiton relies on the backend and data retrival. Most of the links and the functionalities are reliant on the data it receives from the backend hence most of the buttons will not load a new page. Also because this will be a single page applicaiton there is only one page that has all the content.
 
 ---
 
