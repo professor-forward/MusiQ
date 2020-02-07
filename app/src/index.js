@@ -36,7 +36,7 @@ window.onload = () => {
   Array.from(card).forEach(element => {
     element.addEventListener("click", () => {
       alert("Now Playing " + document.getElementById("artist").innerText);
-      alert("Now Playing " + element.firstElementChild.getAttribute("src"));
+
       document.getElementById("artist").innerText =
         element.lastElementChild.innerHTML;
       document.getElementById("title").innerText =
