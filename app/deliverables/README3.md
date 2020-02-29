@@ -1,4 +1,4 @@
-<h2><center>CSI 3140 Project Deliverable 2</center></h2>
+<h2><center>CSI 3140 Project Deliverable 3</center></h2>
 
 <center><img src="/app/assets/logo.svg?sanitize=true" height="100" width="100">
 </img>
