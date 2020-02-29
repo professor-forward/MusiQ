@@ -8,6 +8,8 @@ import { Component, OnInit } from "@angular/core";
 })
 export class AudioPlayerComponent implements OnInit {
   audio = new Audio("../../../assets/audio-1.mp3");
+  artistName = "Wanye Kest";
+  trackName = "Clocks";
 
   iconChange = "fa-play";
   constructor() {}

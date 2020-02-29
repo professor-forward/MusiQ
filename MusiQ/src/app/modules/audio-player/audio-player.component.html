@@ -1,8 +1,8 @@
 <div class="audio-player">
   <div class="player">
     <div id="info" class="info">
-      <span id="artist" class="artist">Wanye Kest</span>
-      <span id="title" class="name">Clocks...</span>
+      <span id="artist" class="artist">{{ artistName }} </span>
+      <span id="title" class="name"> {{ trackName }}...</span>
       <div class="progress-bar">
         <div class="bar"></div>
       </div>
@@ -25,10 +25,6 @@
           id="player-controller-next-btn"
           class="next fas fa-forward"
         ></div>
-
-        <!-- <audio id="audio-test" #player>
-          <source src="../../../assets/audio-1.mp3" type="audio/mp3" />
-        </audio> -->
       </div>
     </div>
   </div>

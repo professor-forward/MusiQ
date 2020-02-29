@@ -12,11 +12,21 @@
     </li>
     <li><a href="#">Library</a></li>
     <li><a href="#">Browse</a></li>
-    <li id="loginbtn" class="navbar-item-right">
-      <a href="#">Login</a>
+    <li
+      routerLink="/login"
+      (click)="viewLoginModal()"
+      id="loginbtn"
+      class="navbar-item-right"
+    >
+      <a>Login</a>
     </li>
-    <li id="registerbtn" class="navbar-item-right register">
-      <a href="#">Register</a>
+    <li
+      routerLink="/register"
+      (click)="viewRegisterationModal()"
+      id="registerbtn"
+      class="navbar-item-right register"
+    >
+      <a>Register</a>
     </li>
   </ul>
 </nav>
