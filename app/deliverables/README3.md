@@ -14,13 +14,13 @@
 ## Table of contents
 
 1. [Introduction](#introduction)
-2. [Colour Palette](#colour-palette)
-   1. [Primary Colours](#primary-colours)
-   2. [Secondary Colours](#secondary-colours)
-3. [Fonts and Type Scale](#fonts-and-type-scale)
-4. [Icons](#icons)
-5. [Buttons and Form Elements](#buttons-and-form-elements)
-6. [UI Components](#ui-components)
+2. [Server Technology](#server-technology)
+3. [Database Technology](#database-technology)
+4. [Automated Test FrameWork](#automated-test-frameWork)
+5. [Deployment Upgrade Script](#deployment-upgrade-script)
+6. [Refined HTML/CSS and UI Design System](#refined-html-css-and-ui-design-system)
+7. [FrontEnd Mock Interactivity JS](#frontend-mock-interactivity-js)
+8. [Installation](#installation)
 
 ### Introduction:
 
@@ -36,14 +36,46 @@ I used the MEAN stack simply to get some hands on experience on learning to use 
 
 #### Automated Test FrameWork
 
-Angular uses Jasmine Testing Framework as the default. which uses Karma as a test runner and displayed in the browser.
+Angular uses Jasmine Testing Framework as the default. which uses Karma as a test runner and displayed in the browser. As for MongoDB and Express I am using Mocha Testing framework. The Test files can be found in [Express Test](/backend/src/test/runner.js) and [MongoDB Test](/backend/database/test/runner.js).
 
-### Deplyment Upgrade Script
+To run the test simply use command line to browse to the `/backend/src` or `/backend/database` folders and run `npm install` and then after the installation is complete run `npm test`. Further instructions in the Installation Section.
 
-### Refined HTML/CSS + UI Design System
+### Deployment Upgrade Script
 
-### Front-End Mock Interactivity Using JavaScript
+Every Technology has a few npm dependencies which needs to be installed for the application to be deployed.
+
+### Refined HTML CSS and UI Design System
+
+This will be a single page web application with Angular 9. The Refined HTML/CSS + UI is included in the `MusiQ` folder to run it simply follow the step in the installation.
+
+### FrontEnd Mock Interactivity JS
+
+Front-End Mock interactivity was included in the last deliverable. It will be a bit buggy with angular if it is provided.
 
 ### Installation
 
-Simply copy the repo in your desktop and open the HTML file from `app/src/index.html`. This will run the web application. A proper build tool will be deployed with the next deliverable.
+To run this application you need the following softwares/technologies.
+
+1. [NodeJS](https://nodejs.org/en/download/) and npm
+2. Run `npm install -g @angular/cli@latest` to install Angular CLI or run `npm install @angular/cli@latest` to install it locally which usually needs you to be in the MusiQ directory
+3. [MongoDB](https://www.mongodb.com/download-center/community)
+
+After installing these softwares you can navigate to the MusiQ folder in the root directory and run
+
+1. `npm install`
+2. `ng serve`
+3. `ng test` to run the unit tests
+
+The web application will be server on [localhost:4200](http://localhost:4200/) or the port written in the console.
+
+To start the database navigate to `backend/src/` and run
+
+1. `npm install`
+2. `npm start`
+3. Run `npm test` to run the tests
+
+To start the database navigate to `backend/database/` and run
+
+1. `npm install`
+2. `npm start`
+3. Run `npm test` to run the tests

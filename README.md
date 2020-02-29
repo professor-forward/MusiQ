@@ -67,3 +67,4 @@ To report bugs submit an issue on our GitHub repository.
 The link to the deliverable are:
 
 1. [Deliverable 2](/app/deliverables/README.md)
+2. [Deliverable 3](/app/deliverables/README3.md)

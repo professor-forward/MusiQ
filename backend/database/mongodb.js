@@ -1,4 +1,4 @@
-const MongoClient = require("mongodb").MongoClient;
+const MongoClient = require("./node_modules/mongodb").MongoClient;
 const assert = require("assert");
 
 // Connection URL

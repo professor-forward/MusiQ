@@ -1,0 +1,22 @@
+{
+  "name": "csi3140-winter2020-project-csi3140_project_alizada",
+  "version": "1.0.0",
+  "description": "Automated runner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/professor-forward/csi3140-winter2020-project-csi3140_project_alizada.git"
+  },
+  "keywords": [
+    "runner"
+  ],
+  "author": "Feroz Alizada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/professor-forward/csi3140-winter2020-project-csi3140_project_alizada/issues"
+  },
+  "homepage": "https://github.com/professor-forward/csi3140-winter2020-project-csi3140_project_alizada#readme"
+}
