@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-audio-player',
-  templateUrl: './audio-player.component.html',
-  styleUrls: ['./audio-player.component.css']
+  selector: "app-audio-player",
+  templateUrl: "./audio-player.component.html",
+  // styleUrls: ['./audio-player.component.css']
+  styleUrls: ["../../app.component.css"]
 })
 export class AudioPlayerComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

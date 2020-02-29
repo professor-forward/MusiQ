@@ -1,1 +1,337 @@
 /* You can add global styles to this file, and also import other style files */
+/* Color palletes */
+/* 
+#081317
+#3A3E3B
+#484D6D
+#001021
+#FFFFFF
+*/
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  height: 100%;
+  /* color: #ffffff */
+
+  /* background: #ffffff; */
+  background: #3a3e3b;
+}
+nav {
+  background: 081317;
+}
+
+.navbar {
+  width: 100%;
+  height: 46px;
+  background-color: #081317;
+}
+li {
+  display: inline-block;
+}
+/* Navbar items */
+ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  overflow: auto;
+  padding: 0%;
+  width: 100%;
+}
+
+li a,
+li input {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.logo {
+  padding: 0;
+  padding-left: 20px;
+  float: left;
+  /* margin: 0; */
+}
+li:hover {
+  background-color: #3a3e3b;
+}
+
+li:active {
+  background-color: rgb(49, 48, 48);
+}
+
+.navbar-item-right {
+  float: right;
+}
+.register a:hover {
+  color: #4caf50;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+  box-shadow: 0 0 30px #333;
+  filter: drop-shadow(0 0 30px rgb(63, 62, 62));
+}
+
+.jumbotron {
+  height: 100%;
+  width: 60%;
+  text-align: center;
+  background: #ffffff;
+}
+.sidebar-nav {
+  padding-top: 0.8em;
+  background: #211626;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+}
+input:focus {
+  outline-width: 0;
+}
+
+.sidebar-nav ul li {
+  display: block;
+  text-align: left;
+  padding-left: 1.5em;
+}
+
+i {
+  color: white;
+}
+
+.artist-name {
+  font-weight: bolder;
+  /* color: red; */
+  padding: 0;
+  margin: 0;
+}
+
+.artist-track {
+  padding: 0;
+  margin: 0;
+}
+
+.player-screen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: visible;
+}
+.player-card {
+  padding-top: 1em;
+  height: 200px;
+  width: 200px;
+  margin: 1em 1em 1em 1em;
+
+  border-radius: 1.2em;
+
+  background-color: #3a3e3b;
+  color: #ffffff;
+}
+
+img {
+  opacity: 0.7;
+}
+
+.player-title {
+  width: 100%;
+  display: block;
+  flex-grow: 1;
+}
+
+.audio-player {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 6em;
+  margin: 0 auto;
+}
+
+.player {
+  position: relative;
+}
+.player .info .artist {
+  color: rgb(116, 71, 71);
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.player .info .name {
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.player .info .progress-bar {
+  background-color: #ffd;
+  height: 3px;
+  padding: 1px;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.player .info .progress-bar .bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(251, 18, 18);
+  width: 10%;
+  cursor: pointer;
+}
+
+.player .control-panel {
+  position: relative;
+  background-color: #081317;
+  width: 100%;
+  height: 10em;
+}
+.player .control-panel .album-art {
+  position: absolute;
+  left: 10px;
+  top: -15px;
+  height: 100px;
+  width: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80px;
+  background-image: url("/app/assets/album-2.jpeg");
+}
+
+.player .control-panel .controls {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  padding: 0 10px;
+}
+.player .control-panel .controls .prev,
+.player .control-panel .controls .play,
+.player .control-panel .controls .next {
+  width: 65px;
+  height: 35px;
+  border-radius: 50px;
+  background-size: 20px;
+  padding-top: 20px;
+  margin-top: 5px;
+  color: #ffd;
+
+  text-align: center;
+}
+.player .control-panel .controls .prev:hover,
+.player .control-panel .controls .play:hover,
+.player .control-panel .controls .next:hover {
+  background-color: #3a3e3b;
+  transition: background-color 0.5s ease;
+}
+.player .info {
+  background: #081317;
+  color: #ffffff;
+}
+
+.player-card:hover {
+  opacity: 0.8;
+}
+
+.modal {
+  z-index: 3;
+  display: none;
+  padding-top: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  margin: auto;
+  background-color: #fff;
+  padding: 0;
+  outline: 0;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.container h1 {
+  text-align: center;
+}
+.close {
+  cursor: pointer;
+}
+.container {
+  padding: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+form * {
+  box-sizing: border-box;
+}
+
+form input {
+  width: 100%;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background-color: #e6eee8;
+  padding: 1.2em;
+  border-radius: 20px;
+}
+
+.loginbtn {
+  font-size: 1em;
+  padding: 10px;
+  margin: 0.8em;
+  border-radius: 30px;
+  background-color: #4caf50;
+  width: 40%;
+  display: inline;
+}
+
+.loginbtn:hover {
+  background-color: #81c383;
+}
+.login-form-btn {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.forgot-pass {
+  color: blue;
+  font-size: 0.8em;
+  padding: 15px;
+}
+
+.search-box {
+  width: 76%;
+  margin-left: 1.4em;
+  height: 3em;
+  font-size: 0.8em;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #081317;
+}
+
+.search-bar hr {
+  margin-top: 1.7em;
+}
+
+.danger {
+  background-color: #d9534f;
+}
+.danger:hover {
+  background-color: #ca4e4a;
+}

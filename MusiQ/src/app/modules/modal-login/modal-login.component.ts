@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-modal-login',
-  templateUrl: './modal-login.component.html',
-  styleUrls: ['./modal-login.component.css']
+  selector: "app-modal-login",
+  templateUrl: "./modal-login.component.html",
+  // styleUrls: ['./modal-login.component.css']
+  styleUrls: ["../../app.component.css"]
 })
 export class ModalLoginComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
