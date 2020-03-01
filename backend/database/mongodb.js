@@ -39,7 +39,7 @@ async function createDB(URL, dbName) {
   }
 }
 
-function insertUser(userObj) {
+async function insertUser(userObj) {
   (async () => {
     const client = await MongoClient.connect(URL, {
       useNewUrlParser: true,
@@ -49,7 +49,7 @@ function insertUser(userObj) {
     let db = client.db(dbName);
     try {
       const res = await db.collection("user").insertOne(userObj);
-      console.log(`Inserted:  ${JSON.stringify(res)}`);
+      console.log(`Inserted:  ${JSON.stringify(res["ops"])}`);
       client.close();
     } finally {
       if (!client) client.close();
@@ -57,7 +57,8 @@ function insertUser(userObj) {
   })().catch(err => console.error(err));
 }
 
-function findUser(userObj) {
+async function findUser(userObj) {
+  console.log("finding User", userObj);
   (async () => {
     const client = await MongoClient.connect(URL, {
       useNewUrlParser: true,
@@ -76,7 +77,9 @@ function findUser(userObj) {
 }
 
 createDB(URL, dbName);
-var myobj = { name: "Feroz Alizada", password: "feroz123" };
-insertUser(myobj);
+// var myobj = { name: "Feroz Alizada", password: "feroz123" };
+// insertUser(myobj);
 
-findUser(myobj);
+// findUser(myobj);
+
+module.exports = { insertUser, findUser };

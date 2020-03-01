@@ -8,7 +8,9 @@
       </div>
     </div>
     <div id="control-panel" class="control-panel">
-      <div class="album-art"></div>
+      <!-- <div class="album-art"> -->
+      <img class="album-art" src="{{ artist.albumCover }}" />
+      <!-- </div> -->
       <div class="controls">
         <div
           (click)="previous($event)"

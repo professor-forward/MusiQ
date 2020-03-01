@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ArtistDataService } from "src/app/services/artist-data.service";
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: "app-audio-player",
@@ -18,18 +19,25 @@ export class AudioPlayerComponent implements OnInit {
     trackName: "Weird Singing Noise",
     albumCover: "../../assets/album-6.jpeg"
   };
-  constructor(private _artistDataService: ArtistDataService) {
+  constructor(
+    private _artistDataService: ArtistDataService,
+    private _http: HttpClient
+  ) {
     // this.update();
+  }
+  ngDoCheck() {
+    this.update();
   }
 
   ngOnInit(): void {
+    // this._http.get
     this.update();
+    this._artistDataService.currentSelectedArtist;
   }
   update() {
     this.artist.albumCover = this._artistDataService.currentSelectedArtist.albumCover;
     this.artist.artistName = this._artistDataService.currentSelectedArtist.artistName;
     this.artist.trackName = this._artistDataService.currentSelectedArtist.trackName;
-    console.log("Upadating", this.artist);
   }
 
   play(event) {

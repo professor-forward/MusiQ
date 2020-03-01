@@ -8,6 +8,8 @@ import { SidebarComponent } from "./modules/sidebar/sidebar.component";
 import { AudioPlayerComponent } from "./modules/audio-player/audio-player.component";
 import { AlbumContainerComponent } from "./modules/album-container/album-container.component";
 import { ArtistDataService } from "./services/artist-data.service";
+import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import { ArtistDataService } from "./services/artist-data.service";
     AlbumContainerComponent,
     routingComponents
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [ArtistDataService],
   bootstrap: [AppComponent]
 })

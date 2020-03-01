@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { UserAuthenticationService } from "src/app/services/user-authentication.service";
 
 @Component({
   selector: "app-modal-login",
@@ -7,7 +8,11 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["../../app.component.css"]
 })
 export class ModalLoginComponent implements OnInit {
-  constructor() {}
+  constructor(private _userAuthentication: UserAuthenticationService) {}
 
   ngOnInit(): void {}
+  public user = { email: "", password: "" };
+  loginUser() {
+    this._userAuthentication.authenticateUser(this.user);
+  }
 }

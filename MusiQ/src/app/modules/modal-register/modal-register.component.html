@@ -1,11 +1,17 @@
 <div id="modal-register" class="modal">
   <div class="modal-content">
-    <form action="#">
+    <form>
       <div class="container">
         <h1>Register</h1>
         <hr />
         <label for="email">Email</label>
-        <input required type="text" placeholder="Email Address" name="email" />
+        <input
+          required
+          type="text"
+          placeholder="Email Address"
+          name="email"
+          [(ngModel)]="user.email"
+        />
 
         <label for="password"><b>Password</b></label>
         <input
@@ -13,6 +19,7 @@
           type="password"
           placeholder="Password"
           name="password"
+          [(ngModel)]="user.password"
         />
         <label for="re-password"><b>Confirm Password</b></label>
         <input
@@ -20,13 +27,20 @@
           type="password"
           placeholder="Confirm Password"
           name="re-password"
+          [(ngModel)]="user.rePassword"
         />
 
         <label for="re-password"><b>Date of Birth</b></label>
-        <input required type="date" placeholder="Year" name="re-password" />
+        <input
+          required
+          type="date"
+          placeholder="Year"
+          name="re-password"
+          [(ngModel)]="user.dateOfBirth"
+        />
         <hr />
         <div class="login-form-btn">
-          <button type="submit" class="loginbtn">Register</button>
+          <button (click)="register()" class="loginbtn">Register</button>
           <button routerLink="/" id="closebtnreg" class="loginbtn danger">
             Close
           </button>

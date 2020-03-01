@@ -109,6 +109,8 @@ i {
   /* color: red; */
   padding: 0;
   margin: 0;
+  /* margin-left: 100px; */
+  /* padding-left: 10px; */
 }
 
 .artist-track {
@@ -161,11 +163,13 @@ img {
   color: rgb(116, 71, 71);
   font-size: 16px;
   margin-bottom: 5px;
+  padding-left: 10px;
 }
 .player .info .name {
   color: #999;
   font-size: 12px;
   margin-bottom: 8px;
+  padding-left: 10px;
 }
 .player .info .progress-bar {
   background-color: #ffd;
@@ -192,15 +196,28 @@ img {
   height: 10em;
 }
 .player .control-panel .album-art {
-  position: absolute;
+  /* position: absolute;
   left: 10px;
   top: -15px;
   height: 100px;
   width: 80px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 80px; */
+}
+
+.player .control-panel img {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  height: 72px;
+  width: 100px;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: 80px;
-  background-image: url("../assets/album-2.jpeg");
+  /* padding-left: 10px; */
+  /* background-image: url("../assets/album-2.jpeg"); */
 }
 
 .player .control-panel .controls {

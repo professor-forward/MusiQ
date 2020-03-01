@@ -1,11 +1,17 @@
 <div id="modal-login" class="modal">
   <div class="modal-content">
-    <form action="#">
+    <form #form>
       <div class="container">
         <h1>Login</h1>
         <hr />
         <label for="email">Email</label>
-        <input required type="text" placeholder="Email Address" name="email" />
+        <input
+          required
+          type="text"
+          placeholder="Email Address"
+          name="email"
+          [(ngModel)]="user.email"
+        />
 
         <label for="password"><b>Password</b></label>
         <input
@@ -13,10 +19,13 @@
           type="password"
           placeholder="Password"
           name="password"
+          [(ngModel)]="user.password"
         />
         <hr />
         <div class="login-form-btn">
-          <button type="submit" class="loginbtn">Login</button>
+          <button (click)="loginUser()" class="loginbtn">
+            Login
+          </button>
           <button routerLink="/" id="closebtnlogin" class="loginbtn danger">
             Close
           </button>
