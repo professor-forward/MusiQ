@@ -7,6 +7,7 @@ import { NavbarComponent } from "./modules/navbar/navbar.component";
 import { SidebarComponent } from "./modules/sidebar/sidebar.component";
 import { AudioPlayerComponent } from "./modules/audio-player/audio-player.component";
 import { AlbumContainerComponent } from "./modules/album-container/album-container.component";
+import { ArtistDataService } from "./services/artist-data.service";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { AlbumContainerComponent } from "./modules/album-container/album-contain
     routingComponents
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [ArtistDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
