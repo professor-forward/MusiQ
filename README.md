@@ -19,7 +19,7 @@
 4. [Technologies](#technologies)
 5. [Installation](#installation)
 6. [Report Bugs](#report-bugs)
-7. [Deliverable 2](#deliverable-2)
+7. [Deliverables](#deliverables)
 
 ### Introduction:
 
@@ -62,9 +62,11 @@ And simply copy the repo in your desktop and open the HTML file from `app/src/in
 
 To report bugs submit an issue on our GitHub repository.
 
-### Deliverable 2
+### Deliverables
 
 The link to the deliverable are:
 
 1. [Deliverable 2](/app/deliverables/README.md)
 2. [Deliverable 3](/app/deliverables/README3.md)
+
+If the link does not work the Deliverable 3 is located in the root folder `app/deliverables`
