@@ -23,7 +23,6 @@ app.post("/api/login", function(req, res) {
   res.send({
     status: "success",
     message: "Login Successfull"
-    // user:
   });
 });
 

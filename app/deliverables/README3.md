@@ -52,7 +52,7 @@ This will be a single page web application with Angular 9. The Refined HTML/CSS 
 
 ### FrontEnd Mock Interactivity JS
 
-Front-End Mock interactivity was included in the last deliverable. It will be a bit buggy with angular if it is provided. Since it requires using services to pass around data instead of simply adding event listeners.
+Front-End Mock interactivity was included in the last deliverable. It will be a bit buggy with angular if it is provided.
 
 ### Installation
 
@@ -81,3 +81,5 @@ To start the database navigate to `backend/database/` and run
 1. `npm install`
 2. `npm start`
 3. Run `npm test` to run the tests
+
+After running everything you can then test the login and Registeration of the web applicaiton.
