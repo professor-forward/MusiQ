@@ -1,0 +1,32 @@
+<nav class="navbar">
+  <ul class="navbar-item">
+    <li>
+      <img
+        class="logo"
+        src="../../../assets/logo.svg"
+        alt="logo"
+        width="46"
+        height="46"
+      />
+      <a class="active" href="#">MusiQ</a>
+    </li>
+    <li><a href="#">Library</a></li>
+    <li><a href="#">Browse</a></li>
+    <li
+      routerLink="/login"
+      (click)="viewLoginModal()"
+      id="loginbtn"
+      class="navbar-item-right"
+    >
+      <a>Login</a>
+    </li>
+    <li
+      routerLink="/register"
+      (click)="viewRegisterationModal()"
+      id="registerbtn"
+      class="navbar-item-right register"
+    >
+      <a>Register</a>
+    </li>
+  </ul>
+</nav>

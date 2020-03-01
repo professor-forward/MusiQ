@@ -1,0 +1,22 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "The Back-end API for the music streaming web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive ./test/runner.js",
+    "start": "node api"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "Feroz Alizada",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mocha": "^7.1.0",
+    "should": "^13.2.3"
+  }
+}
