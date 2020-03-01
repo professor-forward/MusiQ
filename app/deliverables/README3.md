@@ -66,7 +66,7 @@ After installing these softwares you can navigate to the MusiQ folder in the roo
 2. `ng serve`
 3. `ng test` to run the unit tests
 
-The web application will be server on [localhost:4200](http://localhost:4200/) or the port written in the console.
+The web application will be served on [localhost:4200](http://localhost:4200/) or the port written in the console.
 
 To start the database navigate to `backend/src/` and run
 
