@@ -13,9 +13,8 @@
   "author": "Feroz Alizada",
   "license": "ISC",
   "dependencies": {
+    "mocha": "^7.1.0",
     "mongodb": "^3.5.4"
   },
-  "devDependencies": {
-    "mocha": "^7.1.0"
-  }
+  "devDependencies": {}
 }

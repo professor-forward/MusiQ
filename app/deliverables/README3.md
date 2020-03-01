@@ -46,6 +46,8 @@ Every Technology has a few npm dependencies which needs to be installed for the 
 
 NOTE: Travic CI is added for continous deployment and integration but due to the security on the branch it can not be deployed.
 
+Simply install docker and run `docker-compose docker-compose.yml up` from the root folder
+
 ### Refined HTML CSS and UI Design System
 
 This will be a single page web application with Angular 9. The Refined HTML/CSS + UI is included in the `MusiQ` folder to run it simply follow the step in the installation.
