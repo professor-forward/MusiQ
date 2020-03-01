@@ -62,7 +62,9 @@ To run this application you need the following softwares/technologies.
 2. Run `npm install -g @angular/cli@latest` to install Angular CLI or run `npm install @angular/cli@latest` to install it locally which usually needs you to be in the MusiQ directory
 3. [MongoDB](https://www.mongodb.com/download-center/community)
 
-After installing these softwares you can navigate to the MusiQ folder in the root directory and run
+After installing these softwares you can navigate to the MusiQ folder in the root directory and run make sure MongoDB server is running.
+
+navigate to your MongoDB bin files and run `mongo` for mac
 
 1. `npm install`
 2. `ng serve`
@@ -75,6 +77,8 @@ To start the database navigate to `backend/src/` and run
 1. `npm install`
 2. `npm start`
 3. Run `npm test` to run the tests
+
+if the database fails to run simply run `npm start` again
 
 To start the database navigate to `backend/database/` and run
 
