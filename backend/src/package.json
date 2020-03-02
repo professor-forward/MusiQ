@@ -2,7 +2,7 @@
   "name": "api",
   "version": "1.0.0",
   "description": "The Back-end API for the music streaming web app",
-  "main": "index.js",
+  "main": "api.js",
   "scripts": {
     "test": "mocha --recursive ./test/runner.js",
     "start": "node api"
@@ -17,6 +17,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mocha": "^7.1.0",
+    "mongodb": "^3.5.4",
     "should": "^13.2.3"
   },
   "devDependencies": {}

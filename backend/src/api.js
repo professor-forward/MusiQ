@@ -1,8 +1,10 @@
 const express = require("express");
+
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const db = require("../database/mongodb");
-
+const mongo = require("mongodb");
+// const db = require("./../database/mongodb");
+// import { insertUser } from "./../database/mongodb";
 const app = express();
 const PORT = 8083;
 
@@ -11,7 +13,7 @@ app.use(cors());
 
 app.post("/api/register", function(req, res) {
   console.log("\nUser Registered");
-  db.insertUser(req.body);
+  // insertUser(req.body);
   res.send({
     status: "success",
     message: "User Registered"
@@ -19,7 +21,7 @@ app.post("/api/register", function(req, res) {
 });
 
 app.post("/api/login", function(req, res) {
-  db.findUser(req.body);
+  // db.findUser(req.body);
   res.send({
     status: "success",
     message: "Login Successfull"
