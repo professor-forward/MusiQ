@@ -22,20 +22,14 @@ async function createDB(URL, dbName) {
 
     var collectionList = ["user", "song", "favourite"];
     console.log("Creating Collections...");
-    // (async () => {
-    //   for await (collectionName of collectionList) {
     db.createCollection("user", function(err, res) {
       if (err) console.log(err);
       if (client.isConnected()) client.close();
     });
-    // }
-    // })();
+    console.log(`Database running at: ${URL}`);
   } catch (exception) {
-    console.log(exception);
+    console.log(`Exception: ${exception}`);
   }
-  // finally {
-  //   if (client.isConnected()) client.close();
-  // }
 }
 
 // Inserts a user in the database collection
