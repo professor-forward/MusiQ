@@ -15,7 +15,6 @@ services:
       - database # link this service to the database service
 
   database: # name of the third service
-    build: backend/database # specify the directory of the Dockerfile
     image: mongo # specify image to build container from
     ports:
       - "27017:27017" # specify port forwarding
