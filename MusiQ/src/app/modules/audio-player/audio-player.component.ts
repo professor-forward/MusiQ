@@ -6,7 +6,7 @@ import { HttpClient } from "@angular/common/http";
   selector: "app-audio-player",
   templateUrl: "./audio-player.component.html",
   // styleUrls: ['./audio-player.component.css']
-  styleUrls: ["../../app.component.css"]
+  styleUrls: ["../../app.component.css"],
 })
 export class AudioPlayerComponent implements OnInit {
   audio = new Audio("../../../assets/audio-1.mp3");
@@ -17,7 +17,7 @@ export class AudioPlayerComponent implements OnInit {
   public artist = {
     artistName: "Will Carpenter",
     trackName: "Weird Singing Noise",
-    albumCover: "../../assets/album-6.jpeg"
+    albumCover: "../../assets/album-6.jpeg",
   };
   constructor(
     private _artistDataService: ArtistDataService,
