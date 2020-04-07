@@ -6,11 +6,15 @@ services:
     build: MusiQ # specify the directory of the Dockerfile
     ports:
       - "4200:4200" # specify port mapping
+    container_name: frontend
+    restart: always
 
   express: # name of the second service
     build: backend/src # specify the directory of the Dockerfile
     ports:
       - "8083:8083" #specify ports mapping
+    container_name: backend
+    restart: always
     links:
       - database # link this service to the database service
 

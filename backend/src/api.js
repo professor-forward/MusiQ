@@ -6,7 +6,7 @@ const mongo = require("mongodb");
 const db = require("./mongodb");
 
 const app = express();
-const PORT = 8083 || process.argv[2];
+const PORT = "8083" || process.argv[2];
 
 app.use(bodyParser.json());
 app.use(cors());
