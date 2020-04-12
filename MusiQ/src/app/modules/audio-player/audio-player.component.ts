@@ -17,7 +17,7 @@ export class AudioPlayerComponent implements OnInit {
   public artist = {
     artistName: "Will Carpenter",
     trackName: "Weird Singing Noise",
-    albumCover: "../../assets/album-6.jpeg",
+    albumCover: "../../assets/album-1.jpeg",
     URL: "https://s3.ca-central-1.amazonaws.com/audio.musiq.com/audio-1.mp3",
   };
   constructor(
@@ -32,15 +32,13 @@ export class AudioPlayerComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // this._http.get
-    // this._artistDataService.getSongData();
     this.update();
     this._artistDataService.currentSelectedArtist;
   }
   update() {
     this.artist.URL = this._artistDataService.currentSelectedArtist.URL;
     this.audio.src = this.artist.URL;
-
+    // this.audio.pause();
     this.artist.albumCover = this._artistDataService.currentSelectedArtist.albumCover;
     this.artist.artistName = this._artistDataService.currentSelectedArtist.artistName;
     this.artist.trackName = this._artistDataService.currentSelectedArtist.trackName;
@@ -57,7 +55,8 @@ export class AudioPlayerComponent implements OnInit {
   }
   next() {
     this._artistDataService.getNextArtist();
-    // this.update();
+    this.update();
+    console.log(this.artist);
   }
   previous() {
     this._artistDataService.getPrevArtist();

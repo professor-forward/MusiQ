@@ -60,16 +60,16 @@ export class ArtistDataService {
     this.currentSelectedArtist;
   }
   getNextArtist() {
-    this.count++;
-    this.getCurrentArist();
+    if (this.count == this.data.length - 1) {
+      this.count = 0;
+    }
+    this.setCurrentSelectedArtist(this.data[this.count++]);
   }
   getPrevArtist() {
     if (this.count == 0) {
-      this.count = 5;
-    } else {
-      this.count--;
+      this.count = this.data.length - 1;
     }
-    this.getCurrentArist();
+    this.setCurrentSelectedArtist(this.data[this.count--]);
   }
   getArtistInfo() {
     return this.data;
