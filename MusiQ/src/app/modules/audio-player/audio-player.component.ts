@@ -31,6 +31,7 @@ export class AudioPlayerComponent implements OnInit {
 
   ngOnInit(): void {
     // this._http.get
+    this._artistDataService.getSongData();
     this.update();
     this._artistDataService.currentSelectedArtist;
   }

@@ -18,18 +18,14 @@ async function createDB(URL, dbName) {
     console.log("Successfully Connect...");
     const db = client.db(dbName);
     console.log(`Creating database: ${dbName} ...`);
+    insertSong([song1, song2, song3, song4, song5, song6]);
 
-    var collectionList = ["user", "song", "favourite"];
-    console.log("Creating Collections...");
-    // db.createCollection("user", function (err, res) {
-    //   if (err) console.log(err);
-    //   // if (client.isConnected()) client.close();
-    // });
-
-    // db.createCollection("song", function (err, res) {
-    //   if (err) console.log(err);
-    //   // if (client.isConnected()) client.close();
-    // });
+    // Seed and insert sample user and songs
+    user1 = { username: "admin", password: "admin" };
+    user2 = { username: "feroz", password: "feroz123" };
+    insertUser(user1);
+    insertUser(user2);
+    console.log("objects added");
 
     console.log(`Database running at: ${URL}`);
   } catch (exception) {
@@ -48,7 +44,7 @@ async function insertUser(userObj) {
     let db = client.db(dbName);
     try {
       const res = await db.collection("user").insertOne(userObj);
-      console.log(`Inserted:  ${JSON.stringify(res["ops"])}`);
+      // console.log(`Inserted:  ${JSON.stringify(res["ops"])}`);
       client.close();
     } catch (err) {
       console.log(err);
@@ -68,7 +64,7 @@ async function insertSong(songObj) {
     let db = client.db(dbName);
     try {
       const res = await db.collection("song").insertMany(songObj);
-      console.log(`Inserted:  ${JSON.stringify(res["ops"])}`);
+      // console.log(`Inserted:  ${JSON.stringify(res["ops"])}`);
       client.close();
     } catch (err) {
       console.log(err);
@@ -100,19 +96,45 @@ async function findUser(userObj) {
   })().catch((err) => console.error(err));
 }
 
-// Creates the database when the file is loaded
-try {
-  createDB(URL, dbName);
-  console.log(`${dbName} creation complete`);
-} catch (err) {
-  console.log("damn");
+function getSongs() {
+  var data = [];
+  return (async () => {
+    const client = await MongoClient.connect(URL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+
+    const db = client.db(dbName);
+    try {
+      await db
+        .collection("song")
+        .find({})
+        .toArray()
+        .then((results) => {
+          data = results;
+          return results;
+        })
+        .catch((error) => console.error(error));
+
+      return data;
+    } catch (err) {
+      console.log(err);
+    } finally {
+      if (!client) client.close();
+    }
+  })().catch((err) => console.error(err));
+  // return data;
 }
 
-// Seed and insert sample user and songs
-user1 = { username: "admin", password: "admin" };
-user2 = { username: "feroz", password: "feroz123" };
-insertUser(user1);
-insertUser(user2);
+// Creates the database when the file is loaded
+function createSchema() {
+  try {
+    createDB(URL, dbName);
+    console.log(`${dbName} creation complete`);
+  } catch (err) {
+    console.log("damn");
+  }
+}
 
 song1 = {
   artistName: "Will Carpenter",
@@ -162,8 +184,5 @@ song6 = {
   URL: "https://s3.ca-central-1.amazonaws.com/audio.musiq.com/audio-6.mp3",
 };
 
-insertSong([song1, song2, song3, song4, song5, song6]);
-console.log("objects added");
-
 // Exports modules and functions to be used by the api...
-module.exports = { insertUser, findUser, createDB };
+module.exports = { insertUser, findUser, createDB, getSongs, createSchema };
