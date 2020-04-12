@@ -18,6 +18,7 @@ export class AudioPlayerComponent implements OnInit {
     artistName: "Will Carpenter",
     trackName: "Weird Singing Noise",
     albumCover: "../../assets/album-6.jpeg",
+    URL: "https://s3.ca-central-1.amazonaws.com/audio.musiq.com/audio-1.mp3",
   };
   constructor(
     private _artistDataService: ArtistDataService,
@@ -27,21 +28,25 @@ export class AudioPlayerComponent implements OnInit {
   }
   ngDoCheck() {
     this.update();
+    this.play();
   }
 
   ngOnInit(): void {
     // this._http.get
-    this._artistDataService.getSongData();
+    // this._artistDataService.getSongData();
     this.update();
     this._artistDataService.currentSelectedArtist;
   }
   update() {
+    this.artist.URL = this._artistDataService.currentSelectedArtist.URL;
+    this.audio.src = this.artist.URL;
+
     this.artist.albumCover = this._artistDataService.currentSelectedArtist.albumCover;
     this.artist.artistName = this._artistDataService.currentSelectedArtist.artistName;
     this.artist.trackName = this._artistDataService.currentSelectedArtist.trackName;
   }
 
-  play(event) {
+  play() {
     if (this.audio.paused) {
       this.audio.play();
       this.iconChange = "fa-pause";
@@ -50,10 +55,12 @@ export class AudioPlayerComponent implements OnInit {
       this.iconChange = "fa-play";
     }
   }
-  next(event) {
-    console.log(event);
+  next() {
+    this._artistDataService.getNextArtist();
+    // this.update();
   }
-  previous(event) {
-    console.log(event.target);
+  previous() {
+    this._artistDataService.getPrevArtist();
+    // this.update();
   }
 }
